@@ -1,4 +1,5 @@
 gfx = love.graphics
+fsy = love.filesystem
 new = function (nombre)
 	return fsy.load(nombre .. ".lua")()
 end
@@ -6,7 +7,7 @@ end
 wt = gfx.getWidth()
 ht = gfx.getHeight()
 
-require(mapa1)
+require("mapa1")
 
 function love.load( ... )
 	
